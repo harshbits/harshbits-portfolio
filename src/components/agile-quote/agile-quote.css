@@ -1,0 +1,25 @@
+.quote {
+  position: relative;
+  color: white;
+}
+
+.quote-content {
+  padding-left: 40px;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.quote-marks {
+  font-family: Arial;
+  font-size: 200px;
+  position: absolute;
+  top: -50px;
+  opacity: 0.1;
+}
+
+.quote-author {
+  padding-left: 40px;
+  display: inline-block;
+  opacity: 0.8;
+  font-size: 12px;
+}
