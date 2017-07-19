@@ -3,6 +3,5 @@
   "name": "Harsh Bhavsar - Portfolio",
   "description": "Harsh Bhavsar's portfolio web application designed in React.js",
   "repository": "https://github.com/harshbits/harshbits-portfolio",
-  "logo": "",
   "keywords": ["React.js + Redux", "Material-UI", "Portfolio", "api.ai", "Cognitive Cooking", "natural language"]
 }
