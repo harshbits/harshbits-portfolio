@@ -2,7 +2,8 @@
   "name": "harshbits-portfolio",
   "homepage": "http://harshbhavsar.herokuapp.com/",
   "version": "1.0.0",
-  "private": true,
+  "description": "harshbits-portfolio web app",
+  "main": "index.js",
   "dependencies": {
     "axios": "0.16.0",
     "babel-cli": "^6.24.1",
