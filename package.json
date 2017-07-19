@@ -1,6 +1,6 @@
 {
-  "name": "personal-portfolio",
-  "homepage": "https://salomonelli.github.io/personal-portfolio",
+  "name": "harshbits-portfolio",
+  "homepage": "http://harshbhavsar.herokuapp.com/",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
