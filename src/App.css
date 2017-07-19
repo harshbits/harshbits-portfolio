@@ -69,7 +69,14 @@ p.headline {
 }
 
 .header-section {
-  background: #217DBB;
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 1000px;
+  background: url(/intro-back.jpg);
+  background-size: cover;
+  padding: 15px;
+  overflow: hidden
 }
 
 p.text-justify {

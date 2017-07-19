@@ -50,10 +50,8 @@ class HeaderComponent extends Component {
                 <ArrowIcon />
               </FloatingActionButton>
             </div>
-
           </div>
         );
-    }
+      }
 }
-
 export default HeaderComponent;
