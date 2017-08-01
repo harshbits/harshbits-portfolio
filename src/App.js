@@ -1,3 +1,9 @@
+/*
+    Title: App.js
+    Version: 1.0.0
+    Author: Harsh Bhavsar
+    Repo: https://github.com/harshbits/harshbits-portfolio/
+*/
 import React, {Component} from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import 'roboto-npm-webfont';
@@ -13,7 +19,6 @@ import ProgrammingComponent from './components/programming/programming';
 import AgileQuoteComponent from './components/agile-quote/agile-quote';
 import AgileComponent from './components/agile/agile';
 import DesignComponent from './components/design/design';
-import CodeGithubComponent from './components/code-github/code-github';
 import ContactComponent from './components/contact/contact';
 import FooterComponent from './components/footer/footer';
 
@@ -35,7 +40,7 @@ class App extends Component {
               <IntroductionComponent></IntroductionComponent>
             </div>
           </div>
-          <div className="section">
+          <div className="section colored">
             <div className="section-container">
               <TimelineComponent></TimelineComponent>
             </div>
@@ -64,11 +69,6 @@ class App extends Component {
           <div className="section dark">
             <div className="section-container">
               <AgileQuoteComponent></AgileQuoteComponent>
-            </div>
-          </div>
-          <div className="section colored">
-            <div className="section-container">
-              <CodeGithubComponent></CodeGithubComponent>
             </div>
           </div>
           <div className="section">

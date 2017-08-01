@@ -16,21 +16,12 @@ class FooterComponent extends Component {
     return (
       <div className="footer">
         <div className="link-list">
-          <a target="_blank" href="https://github.com/harshbits">
-            Github
-          </a>
-           /
-          <a target="_blank" href="https://twitter.com/harshbits2110">
-            Twitter
-          </a>
-           /
-          <a target="_blank" href="https://www.linkedin.com/in/harshbhavsar21/">
-            LinkedIn
-          </a>
+          Copyright &copy; 2017 HARSH BHAVSAR
         </div>
         <FlatButton labelStyle={{
           "color": "rgba(0, 0, 0, 0.65)"
         }} label="Back to top" onClick={this.onScrollToTop}/>
+
       </div>
     );
   }
