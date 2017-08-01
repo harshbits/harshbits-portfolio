@@ -9,7 +9,6 @@ import Menu from 'material-ui/svg-icons/navigation/menu';
 import {white} from 'material-ui/styles/colors';
 import FontIcon from 'material-ui/FontIcon';
 
-
 class ProgressComponent extends Component {
 
     constructor(props) {

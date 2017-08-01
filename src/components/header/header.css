@@ -27,13 +27,13 @@
   width: 100%;
 }
 
-.header h6 {
+.header h4 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.header h3 {
+.header h2 {
   text-transform: uppercase;
   letter-spacing: 9px;
 }

@@ -24,7 +24,6 @@ class FooterComponent extends Component {
             Twitter
           </a>
            /
-           /
           <a target="_blank" href="https://www.linkedin.com/in/harshbhavsar21/">
             LinkedIn
           </a>

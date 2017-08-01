@@ -56,11 +56,12 @@ p {
 
 .section.colored {
   background: white;
-  /* background: #EBEBEB; */
+  background: #EBEBEB; 
 }
 
 p.headline {
   margin-top: 0;
+  margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 3px;
@@ -75,7 +76,6 @@ p.headline {
   max-height: 1000px;
   background: url(/intro-back.jpg);
   background-size: cover;
-  padding: 15px;
   overflow: hidden
 }
 
