@@ -12,6 +12,8 @@ import './leftDrawer.css';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
 import FontIcon from 'material-ui/FontIcon';
+import Divider from 'material-ui/Divider';
+import Avatar from 'material-ui/Avatar';
 
 class LeftDrawer extends Component {
 
@@ -25,16 +27,21 @@ class LeftDrawer extends Component {
           docked={false}
           open={this.props.open}
           onRequestChange={(open) => this.props.handleClose()}
+          // containerStyle={{width: '270px'}}
           >
           <AppBar
             title="Harsh Bhavsar"
-            showMenuIconButton={false}
+            iconElementLeft={<Avatar src="avatar.jpg" style={{margin: '10px'}}/>}
             style={{ backgroundColor: '#217DBB', height: '72px' }} />
+          <div className="section drawer" >
           <Menu>
-          <MenuItem leftIcon={<FontIcon className='fa fa-chef-hat' />}>Cognitive Cooking</MenuItem>
-          <MenuItem>Advanced Farming System</MenuItem>
-          <MenuItem>Home Coumputing System</MenuItem>
+            <MenuItem leftIcon={<FontIcon className='fa fa-cutlery' />}>Cognitive Cooking</MenuItem>
+            <MenuItem leftIcon={<FontIcon className='fa fa-pagelines' />}>Advanced Farming</MenuItem>
+            <MenuItem leftIcon={<FontIcon className='fa fa-home' />}>Home Coumputing</MenuItem>
+            <Divider />
+            <MenuItem leftIcon={<FontIcon className='fa fa-code' />} >gRPC-Spring Boot</MenuItem>
           </Menu>
+          </div>
         </Drawer>
       </div>
     );
