@@ -8,7 +8,6 @@ import React, {Component} from 'react';
 import Drawer from 'material-ui/Drawer';
 import AppBar from 'material-ui/AppBar';
 import './leftDrawer.css';
-// import { Link } from 'react-router';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
 import FontIcon from 'material-ui/FontIcon';
@@ -27,7 +26,6 @@ class LeftDrawer extends Component {
           docked={false}
           open={this.props.open}
           onRequestChange={(open) => this.props.handleClose()}
-          // containerStyle={{width: '270px'}}
           >
           <AppBar
             title="Harsh Bhavsar"
@@ -39,7 +37,9 @@ class LeftDrawer extends Component {
             <MenuItem leftIcon={<FontIcon className='fa fa-pagelines' />}>Advanced Farming</MenuItem>
             <MenuItem leftIcon={<FontIcon className='fa fa-home' />}>Home Coumputing</MenuItem>
             <Divider />
-            <MenuItem leftIcon={<FontIcon className='fa fa-code' />} >gRPC-Spring Boot</MenuItem>
+            <MenuItem leftIcon={<FontIcon className='fa fa-code' />}
+              linkButton={true} href="https://github.com/harshbits/grpc-spring-boot-services/" target="_blank">
+              gRPC-Spring Boot</MenuItem>
           </Menu>
           </div>
         </Drawer>
