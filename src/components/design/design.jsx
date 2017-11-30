@@ -10,14 +10,11 @@ class DesignComponent extends Component {
     render() {
         return (
           <div className="design">
-            <p className="headline">User Experience and Design</p>
+            <p className="headline">Deep Learning and Cognitive Science</p>
             <p className="text-justify">
-              Through my parents business @fotolia, at the age of 13, I fell in love with Photoshop.
-
-              Ever since, I tried to make everything fancy.
-
-              Nowadays, with a user-centered mindset, I try to develop intuitive, mobile and content first applications.
-
+              I have been working on Machine Learning and Deep Learning development using
+              python. Ever since my bachelors I have interest in Artificial Intelligence.
+              Currently, I am expanding skills and doing research in the field of Deep Learning.
             </p>
 
               <div className="design-checkbox">
@@ -25,7 +22,7 @@ class DesignComponent extends Component {
                   checkedIcon={<ActionFavorite />}
                   uncheckedIcon={<ActionFavoriteBorder />}
                   iconStyle={{"fill":"#A80202"}}
-                  label="UX-Consulting"
+                  label="Deep Learning"
                 />
               </div>
               <div className="design-checkbox">
@@ -33,7 +30,7 @@ class DesignComponent extends Component {
                 checkedIcon={<ActionFavorite />}
                 uncheckedIcon={<ActionFavoriteBorder />}
                 iconStyle={{"fill":"#A80202"}}
-                label="Adobe Photoshop"
+                label="ANN & RNN"
               />
             </div>
             <div className="design-checkbox">
@@ -41,7 +38,7 @@ class DesignComponent extends Component {
                 checkedIcon={<ActionFavorite />}
                 uncheckedIcon={<ActionFavoriteBorder />}
                 iconStyle={{"fill":"#A80202"}}
-                label="Adobe Illustrator"
+                label="TensorFlow"
               />
             </div>
             <div className="design-checkbox">
@@ -49,7 +46,7 @@ class DesignComponent extends Component {
                 checkedIcon={<ActionFavorite />}
                 uncheckedIcon={<ActionFavoriteBorder />}
                 iconStyle={{"fill":"#A80202"}}
-                label="Blender"
+                label="Keras"
               />
           </div>
           <div className="design-checkbox">
@@ -57,7 +54,7 @@ class DesignComponent extends Component {
               checkedIcon={<ActionFavorite />}
               uncheckedIcon={<ActionFavoriteBorder />}
               iconStyle={{"fill":"#A80202"}}
-              label="Digital Painting"
+              label="Theano"
             />
         </div>
 
