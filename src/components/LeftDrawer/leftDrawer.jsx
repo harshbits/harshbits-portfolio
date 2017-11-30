@@ -34,7 +34,8 @@ class LeftDrawer extends Component {
           <div className="section drawer" >
           <Menu>
             <MenuItem leftIcon={<FontIcon className='fa fa-cutlery' />}>Cognitive Cooking</MenuItem>
-            <MenuItem leftIcon={<FontIcon className='fa fa-pagelines' />}>Advanced Farming</MenuItem>
+            <MenuItem leftIcon={<FontIcon className='fa fa-pagelines' />}
+            linkButton={true} href="http://ieeexplore.ieee.org/document/6915416/" target="_blank" >Advanced Farming</MenuItem>
             <MenuItem leftIcon={<FontIcon className='fa fa-home' />}>Home Coumputing</MenuItem>
             <Divider />
             <MenuItem leftIcon={<FontIcon className='fa fa-code' />}
