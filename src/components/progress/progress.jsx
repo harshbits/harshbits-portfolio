@@ -8,7 +8,7 @@ import MenuItem from 'material-ui/MenuItem';
 import Menu from 'material-ui/svg-icons/navigation/menu';
 import {white} from 'material-ui/styles/colors';
 import FontIcon from 'material-ui/FontIcon';
-import ChatBox from '../chatbox/chatbox';
+//import ChatBox from '../chatbox/chatbox';
 
 class ProgressComponent extends Component {
 
@@ -64,6 +64,9 @@ class ProgressComponent extends Component {
         'margin': '15px'
       }
     };
+
+
+    const messageHistory = [];
 
         let socialIcons = (
          <div style={styles.social}>

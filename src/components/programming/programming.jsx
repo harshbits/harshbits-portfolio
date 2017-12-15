@@ -38,7 +38,7 @@ class ProgrammingComponent extends Component {
                                         <ul className="no-top-padding">
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Java</span>
+                                            <span className="html-2">Java 8/9, Python</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                             <li>
@@ -53,10 +53,14 @@ class ProgrammingComponent extends Component {
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Cognitive Science</span>
+                                            <span className="html-2">Deep Learning and Big Data</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
-
+                                          <li>
+                                            &lt;<span className="html-1">li</span>&gt;
+                                            <span className="html-2">TensorFlow, Theano, Keras</span>
+                                            &lt;/<span className="html-1">li</span>&gt;
+                                          </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
                                             <span className="html-2">Google Cloud, AWS</span>
@@ -64,13 +68,7 @@ class ProgrammingComponent extends Component {
                                           </li>
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">Oracle, MySQL, MongoDB</span>
-                                            &lt;/<span className="html-1">li</span>&gt;
-                                          </li>
-
-                                          <li>
-                                            &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">LESS, SASS</span>
+                                            <span className="html-2">Oracle DB, MySQL, MongoDB</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                           <li>
@@ -81,11 +79,6 @@ class ProgrammingComponent extends Component {
                                           <li>
                                             &lt;<span className="html-1">li</span>&gt;
                                             <span className="html-2">AngularJS</span>
-                                            &lt;/<span className="html-1">li</span>&gt;
-                                          </li>
-                                          <li>
-                                            &lt;<span className="html-1">li</span>&gt;
-                                            <span className="html-2">HTML5, CSS3</span>
                                             &lt;/<span className="html-1">li</span>&gt;
                                           </li>
                                         </ul>
