@@ -1,0 +1,7 @@
+.app-bar h1 {
+  margin-top: 5px !important;
+  font-size: 22px !important;
+  display: flex !important;
+  justify-content: center !important; /* align horizontal */
+  align-items: center !important; /* align vertical */
+}

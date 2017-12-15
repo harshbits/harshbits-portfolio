@@ -1,20 +1,20 @@
 /*
     Title: chatbox.jsx
-    Version: 1.0.0
+    Version: 1.0.1
     Author: Harsh Bhavsar
     Repo: https://github.com/harshbits/harshbits-portfolio/
 */
 import React, {Component} from 'react';
 import {render} from 'react-dom'
 import './chatbox.css';
-import {Launcher} from '../../src';
+import {Launcher} from 'react-chat-window';
 
 class ChatBox extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      messageList: props.messageHistory
+       messageList: props.messageHistory || []
     };
   }
 
@@ -41,8 +41,8 @@ class ChatBox extends Component {
       <div>
       <Launcher
         agentProfile={{
-          teamName: 'react-live-chat',
-          imageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png'
+          teamName: 'Eunice - Project UBot',
+          imageUrl: '/ubot.png'
         }}
         onMessageWasSent={this._onMessageWasSent.bind(this)}
         messageList={this.state.messageList}

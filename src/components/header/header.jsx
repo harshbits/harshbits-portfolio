@@ -1,3 +1,9 @@
+/*
+    Title: header.jsx
+    Version: 1.0.1
+    Author: Harsh Bhavsar
+    Repo: https://github.com/harshbits/harshbits-portfolio/
+*/
 import React, {Component} from 'react';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ArrowIcon from 'material-ui/svg-icons/hardware/keyboard-arrow-down';
@@ -46,7 +52,7 @@ class HeaderComponent extends Component {
                 <h4>Software Engineer</h4>
             </div>
             <div className="scroll-down-btn">
-              <FloatingActionButton mini={true} backgroundColor="#A80202" onClick={this.onScrollToIntro.bind(this)}>
+              <FloatingActionButton backgroundColor="#8DABBE" onClick={this.onScrollToIntro.bind(this)}>
                 <ArrowIcon />
               </FloatingActionButton>
             </div>

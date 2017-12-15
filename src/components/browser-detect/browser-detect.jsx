@@ -1,3 +1,9 @@
+/*
+    Title: browser-detect.jsx
+    Version: 1.0.1
+    Author: Harsh Bhavsar
+    Repo: https://github.com/harshbits/harshbits-portfolio/
+*/
 import React, {Component} from 'react';
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';

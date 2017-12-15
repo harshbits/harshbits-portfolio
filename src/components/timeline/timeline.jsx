@@ -1,3 +1,9 @@
+/*
+    Title: timeline.jsx
+    Version: 1.0.1
+    Author: Harsh Bhavsar
+    Repo: https://github.com/harshbits/harshbits-portfolio/
+*/
 import React, {Component} from 'react';
 import {
     Card,

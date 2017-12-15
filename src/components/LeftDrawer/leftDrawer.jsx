@@ -1,6 +1,6 @@
 /*
     Title: leftDrawer.js
-    Version: 1.0.0
+    Version: 1.0.1
     Author: Harsh Bhavsar
     Repo: https://github.com/harshbits/harshbits-portfolio/
 */
@@ -28,6 +28,7 @@ class LeftDrawer extends Component {
           onRequestChange={(open) => this.props.handleClose()}
           >
           <AppBar
+            className='app-bar'
             title="Harsh Bhavsar"
             iconElementLeft={<Avatar src="avatar.jpg" style={{margin: '10px'}}/>}
             style={{ backgroundColor: '#217DBB', height: '72px' }} />
@@ -36,7 +37,9 @@ class LeftDrawer extends Component {
             <MenuItem leftIcon={<FontIcon className='fa fa-cutlery' />}>Cognitive Cooking</MenuItem>
             <MenuItem leftIcon={<FontIcon className='fa fa-pagelines' />}
             linkButton={true} href="http://ieeexplore.ieee.org/document/6915416/" target="_blank" >Advanced Farming</MenuItem>
-            <MenuItem leftIcon={<FontIcon className='fa fa-home' />}>Home Coumputing</MenuItem>
+          <MenuItem leftIcon={<FontIcon className='fa fa-home' />}
+            linkButton={true} href="https://github.com/harshbits/project-u-bot" target="_blank">
+            Home Coumputing</MenuItem>
             <Divider />
             <MenuItem leftIcon={<FontIcon className='fa fa-code' />}
               linkButton={true} href="https://github.com/harshbits/grpc-spring-boot-services/" target="_blank">

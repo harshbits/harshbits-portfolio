@@ -1,3 +1,9 @@
+/*
+    Title: programming.jsx
+    Version: 1.0.1
+    Author: Harsh Bhavsar
+    Repo: https://github.com/harshbits/harshbits-portfolio/
+*/
 import React, {Component} from 'react';
 import Paper from 'material-ui/Paper';
 import './programming.css';
