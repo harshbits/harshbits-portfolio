@@ -40,10 +40,15 @@ class LeftDrawer extends Component {
           <MenuItem leftIcon={<FontIcon className='fa fa-home' />}
             linkButton={true} href="https://github.com/harshbits/project-u-bot" target="_blank">
             Home Coumputing</MenuItem>
-            <Divider />
-            <MenuItem leftIcon={<FontIcon className='fa fa-code' />}
-              linkButton={true} href="https://github.com/harshbits/grpc-spring-boot-services/" target="_blank">
-              gRPC-Spring Boot</MenuItem>
+          <Divider />
+          <MenuItem leftIcon={<FontIcon className='fa fa-code' />}
+            linkButton={true} href="https://github.com/harshbits/grpc-spring-boot-services/" target="_blank">
+            gRPC-Spring Boot</MenuItem>
+
+          <Divider />
+          <MenuItem leftIcon={<FontIcon className='fa fa-file-text' />}
+            linkButton={true} href="/Resume_Harsh.pdf" target="_blank">
+            My Résumé</MenuItem>
           </Menu>
           </div>
         </Drawer>
