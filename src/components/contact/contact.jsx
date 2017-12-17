@@ -88,7 +88,7 @@ class ContactComponent extends Component {
 
       <div className="contact">
         <p className="headline">Contact</p>
-        <p>Are you nosy? Then write me a message:</p>
+        <p>Write me a message:</p>
           <TextField hintText="Name" floatingLabelText="Name" style={{
             "width": "100%"
           }} floatingLabelFocusStyle={{

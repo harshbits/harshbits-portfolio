@@ -89,7 +89,9 @@ class TimelineComponent extends Component {
                             May 2017 - Current
                             <br/>
                             Development of Microservices.
-                            <br/><br/>
+                            <br/>
+                            - Copart Back Office
+                            <br/>
                               <div className="timeline-entries">
                                 <div className="timeline-entry-chip">
                                   <Chip>Spring Boot</Chip>
@@ -127,7 +129,8 @@ class TimelineComponent extends Component {
                           January 2016 - May 2017.
                           <br/>
                           Development of Microservices.
-
+                          <br/>
+                          - Image and Document Service
                           <div className="timeline-entries">
                             <div className="timeline-entry-chip">
                               <Chip>Spring Boot</Chip>
@@ -163,6 +166,8 @@ class TimelineComponent extends Component {
                           June	2014 -	November 2014.
                           <br/>
                           Development of Desktop Application.
+                          <br/>
+                          - Quality Management System
 
                           <div className="timeline-entries">
                             <div className="timeline-entry-chip">

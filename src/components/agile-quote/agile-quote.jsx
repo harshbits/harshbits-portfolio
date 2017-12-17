@@ -16,13 +16,9 @@ class AgileQuoteComponent extends Component {
             <p className="quote">
               <span className="quote-marks">&ldquo;</span>
               <span className="quote-content">
-                Arise, arise, Coders of Github!
-                Fell deeds awake, fire and slaughter!
-                spear shall be shaken, shield be splintered,
-                a sword-day, a red day, ere the sun rises!
-                Ride now, ride now! Ride to Gondor!
+                “There are two rules for success… 1.) Never reveal everything you know.”
               </span>
-              <span className="quote-author">- Théoden, son of Thengel</span>
+              <span className="quote-author">- Roger H. Lincoln</span>
             </p>
           </div>
         );
