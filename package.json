@@ -1,6 +1,6 @@
 {
   "name": "harshbits-portfolio",
-  "homepage": "http://harshbhavsar.herokuapp.com/",
+  "homepage": "http://www.harshbhavsar.com/",
   "version": "1.0.1",
   "description": "harshbits-portfolio web app",
   "main": "index.js",
@@ -20,7 +20,6 @@
     "react-dom": "15.5.4",
     "react-router": "^4.1.2",
     "react-scripts": "0.7.0",
-    "react-simple-chatbot": "^0.2.9",
     "react-tap-event": "1.0.3",
     "react-tap-event-plugin": "2.0.1",
     "redux": "3.5.2",

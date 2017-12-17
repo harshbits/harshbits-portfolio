@@ -66,7 +66,7 @@ class ContactComponent extends Component {
   }
 
   submitData() {
-    return fetch('https://gitter-connect.herokuapp.com/api/message', {
+    return fetch('https://formspree.io/harshbhavsar2110@gmail.com', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
