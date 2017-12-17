@@ -33,7 +33,6 @@
   background: #246C9D !important;
 }
 
-
 .sc-message--content.sent .sc-message--text {
   color: white;
   background-color: #8DABBE !important;
@@ -42,7 +41,7 @@
 }
 
 .sc-message--content.received .sc-message--text {
-  color: #263238;
-  background-color: #246C9D !important;
+  color: #246C9D;
+  background-color: #F4F7F9 !important;
   margin-right: 40px;
 }
