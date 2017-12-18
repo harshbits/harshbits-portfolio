@@ -9,6 +9,7 @@ import {render} from 'react-dom'
 import './chatbox.css';
 import {Launcher} from 'react-chat-window';
 import messageHistory from '../../messageHistory';
+import axios from 'axios';
 
 class ChatBox extends Component {
 
@@ -16,7 +17,7 @@ class ChatBox extends Component {
     super(props);
     this.state = {
        messageList: messageHistory,
-      newMessagesCount: 0
+       newMessagesCount: 0
     };
   }
 
@@ -25,7 +26,30 @@ class ChatBox extends Component {
     this.setState({
       messageList: [...this.state.messageList, message]
     })
+
+    //Post call
+    axios.post('https://ubot-harsh-portfolio.herokuapp.com/v1/message', {
+        headers: {
+                 'Content-Type': 'application/json',
+                 'user': 'anonymous'
+        },
+        data:{
+          type: 'text',
+          author: "me",
+          data: { text: message}
+        }
+      })
+      .then(response => {
+        console.log(response.data);
+        this.setState({
+          messageList: [...this.state.messageList, response.data]
+        });
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   }
+
 
   _sendMessage(text) {
     console.log('send message');
