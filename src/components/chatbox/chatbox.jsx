@@ -29,14 +29,12 @@ class ChatBox extends Component {
 
     //Post call
     axios.post('https://ubot-harsh-portfolio.herokuapp.com/v1/message', {
-        headers: {
-                 'Content-Type': 'application/json',
-                 'user': 'anonymous'
-        },
-        data:{
           type: 'text',
           author: "me",
-          data: { text: message}
+          data: { text: message.data.text}
+        },
+        {headers: {
+            'Content-Type': 'application/json'
         }
       })
       .then(response => {
