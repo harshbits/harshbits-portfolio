@@ -9,10 +9,6 @@ import $ from 'jquery';
 import './progress.css';
 import AppBar from 'material-ui/AppBar';
 import LeftDrawer from '../LeftDrawer/leftDrawer';
-import IconButton from 'material-ui/IconButton';
-import MenuItem from 'material-ui/MenuItem';
-import Menu from 'material-ui/svg-icons/navigation/menu';
-import {white} from 'material-ui/styles/colors';
 import FontIcon from 'material-ui/FontIcon';
 import ChatBox from '../chatbox/chatbox';
 import GeoLocation from '../geo-location/geo-location';
@@ -111,7 +107,6 @@ class ProgressComponent extends Component {
         </div>
        );
         return (
-
           <div className="progress">
             <div
               className="progress-bar"

@@ -5,7 +5,6 @@
     Repo: https://github.com/harshbits/harshbits-portfolio/
 */
 import React, {Component} from 'react';
-import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
 import axios from 'axios';
 
@@ -51,6 +50,7 @@ class GeoLocation extends Component {
   }
 
   componentDidMount() {
+    console.log('Component did mount called:');
     navigator.geolocation.getCurrentPosition(
       (position) => {
         this.getCityName(position.coords.latitude, position.coords.longitude)
