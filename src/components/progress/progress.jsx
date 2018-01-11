@@ -15,6 +15,8 @@ import Menu from 'material-ui/svg-icons/navigation/menu';
 import {white} from 'material-ui/styles/colors';
 import FontIcon from 'material-ui/FontIcon';
 import ChatBox from '../chatbox/chatbox';
+import GeoLocation from '../geo-location/geo-location';
+
 
 class ProgressComponent extends Component {
 
@@ -24,7 +26,8 @@ class ProgressComponent extends Component {
           completed: 0,
           windowHeight: 0,
           domHeight: 0,
-          open: false
+          open: false,
+          locationOpen: false
         };
     }
 
@@ -58,6 +61,22 @@ class ProgressComponent extends Component {
 
     handleClose = () => this.setState({open: false});
 
+    handleClick = (event) => {
+    // This prevents ghost click.
+    event.preventDefault();
+
+    console.log('clicked');
+    this.setState({
+      locationOpen: true,
+      anchorEl: event.currentTarget,
+      });
+    };
+
+    handleRequestClose = () => {
+       this.setState({
+         open: false,
+       });
+     };
 
     render() {
         let progress = this.state.completed;
@@ -66,14 +85,15 @@ class ProgressComponent extends Component {
       'social': {
         'display': 'flex',
         'justifyContent': 'space-between',
-        'width': '150px',
+        'width': '375px',
         'margin': '15px'
       }
     };
 
-        let socialIcons = (
+      let socialIcons = (
          <div style={styles.social}>
-           <a href='https://www.facebook.com/harshbits/'target='_blank'>
+          <GeoLocation />
+          <a href='https://www.facebook.com/harshbits/'target='_blank'>
              <FontIcon className='fa fa-facebook-official' color='white' hoverColor='#ADBAD5' />
           </a>
           <a href='https://twitter.com/harshbits2110/' target='_blank'>
@@ -88,10 +108,10 @@ class ProgressComponent extends Component {
           <a href='https://plus.google.com/u/0/+HarshBhavsar2110/' target='_blank'>
             <FontIcon className='fa fa-google-plus' color='white' hoverColor='#C06766' />
           </a>
-
-       </div>
+        </div>
        );
         return (
+
           <div className="progress">
             <div
               className="progress-bar"
@@ -105,8 +125,7 @@ class ProgressComponent extends Component {
             />
             <LeftDrawer open={this.state.open}
               handleClose={this.handleClose}
-               />
-
+            />
              <ChatBox />
           </div>
         );
