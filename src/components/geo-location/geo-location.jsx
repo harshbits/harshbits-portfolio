@@ -51,18 +51,24 @@ class GeoLocation extends Component {
 
   componentDidMount() {
     console.log('Component did mount called:');
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        this.getCityName(position.coords.latitude, position.coords.longitude)
-        this.setState({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-          error: null,
-        });
-      },
-      (error) => this.setState({ error: error.message }),
-      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
-    );
+    if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          this.getCityName(position.coords.latitude, position.coords.longitude)
+          this.setState({
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+            error: null,
+          });
+        },
+        (error) => this.setState({ error: error.message }),
+        { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
+      );
+    }else{
+      this.setState({
+        location: 'Unknown'
+      });
+    }
   }
 
   render() {
