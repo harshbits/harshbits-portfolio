@@ -21,67 +21,69 @@ import AgileComponent from './components/agile/agile';
 import DesignComponent from './components/design/design';
 import ContactComponent from './components/contact/contact';
 import FooterComponent from './components/footer/footer';
-
+import HttpsRedirect from './components/https-redirect/https-redirect';
 
 class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <div className="App">
-          <BrowserDetectComponent></BrowserDetectComponent>
-          <ProgressComponent></ProgressComponent>
-          <div className="section header-section">
-            <div className="section-container header-component">
-              <HeaderComponent></HeaderComponent>
+        <HttpsRedirect>
+          <div className="App">
+            <BrowserDetectComponent></BrowserDetectComponent>
+            <ProgressComponent></ProgressComponent>
+            <div className="section header-section">
+              <div className="section-container header-component">
+                <HeaderComponent></HeaderComponent>
+              </div>
             </div>
-          </div>
-          <div className="section colored">
-            <div className="section-container">
-              <IntroductionComponent></IntroductionComponent>
+            <div className="section colored">
+              <div className="section-container">
+                <IntroductionComponent></IntroductionComponent>
+              </div>
             </div>
-          </div>
-          <div className="section colored">
-            <div className="section-container">
-              <TimelineComponent></TimelineComponent>
+            <div className="section colored">
+              <div className="section-container">
+                <TimelineComponent></TimelineComponent>
+              </div>
             </div>
-          </div>
-          <div className="section dark">
-            <div className="section-container">
-              <DarkVoiceComponent></DarkVoiceComponent>
+            <div className="section dark">
+              <div className="section-container">
+                <DarkVoiceComponent></DarkVoiceComponent>
+              </div>
             </div>
-          </div>
-          <div className="section colored">
-            <div className="section-container">
-              <ProgrammingComponent></ProgrammingComponent>
+            <div className="section colored">
+              <div className="section-container">
+                <ProgrammingComponent></ProgrammingComponent>
+              </div>
             </div>
-          </div>
-          <div className="section">
-            <div className="section-container">
-              <DesignComponent></DesignComponent>
+            <div className="section">
+              <div className="section-container">
+                <DesignComponent></DesignComponent>
+              </div>
             </div>
-          </div>
 
-          <div className="section colored">
-            <div className="section-container">
-              <AgileComponent></AgileComponent>
+            <div className="section colored">
+              <div className="section-container">
+                <AgileComponent></AgileComponent>
+              </div>
+            </div>
+            <div className="section dark">
+              <div className="section-container">
+                <AgileQuoteComponent></AgileQuoteComponent>
+              </div>
+            </div>
+            <div className="section">
+              <div className="section-container">
+                <ContactComponent></ContactComponent>
+              </div>
+            </div>
+            <div className="section colored">
+              <div className="section-container footer-component">
+                <FooterComponent></FooterComponent>
+              </div>
             </div>
           </div>
-          <div className="section dark">
-            <div className="section-container">
-              <AgileQuoteComponent></AgileQuoteComponent>
-            </div>
-          </div>
-          <div className="section">
-            <div className="section-container">
-              <ContactComponent></ContactComponent>
-            </div>
-          </div>
-          <div className="section colored">
-            <div className="section-container footer-component">
-              <FooterComponent></FooterComponent>
-            </div>
-          </div>
-        </div>
+        </HttpsRedirect>
       </MuiThemeProvider>
     );
   }

@@ -50,7 +50,6 @@ class GeoLocation extends Component {
   }
 
   componentDidMount() {
-    console.log('Component did mount called:');
     if(navigator.geolocation){
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -61,7 +60,8 @@ class GeoLocation extends Component {
             error: null,
           });
         },
-        (error) => this.setState({ error: error.message }),
+        (error) => this.setState({ error: error.message,
+          location: 'Unknown' }),
         { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
       );
     }else{
