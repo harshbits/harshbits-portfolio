@@ -1,6 +1,6 @@
 /*
     Title: progress.jsx
-    Version: 1.0.1
+    Version: 1.5.1
     Author: Harsh Bhavsar
     Repo: https://github.com/harshbits/harshbits-portfolio/
 */
@@ -12,7 +12,6 @@ import LeftDrawer from '../LeftDrawer/leftDrawer';
 import FontIcon from 'material-ui/FontIcon';
 import ChatBox from '../chatbox/chatbox';
 import GeoLocation from '../geo-location/geo-location';
-
 
 class ProgressComponent extends Component {
 
@@ -113,9 +112,8 @@ class ProgressComponent extends Component {
               style={{"width": progress}}>
             </div>
             <AppBar
-              iconClassNameRight="muidocs-icon-navigation-expand-more"
               style={{ backgroundColor: '042D70' }}
-              onLeftIconButtonTouchTap = { this.handleToggle.bind(this)}
+              onLeftIconButtonTouchTap={ this.handleToggle.bind(this)}
               iconElementRight={socialIcons}
             />
             <LeftDrawer open={this.state.open}

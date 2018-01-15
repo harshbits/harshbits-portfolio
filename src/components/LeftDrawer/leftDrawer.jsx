@@ -1,6 +1,6 @@
 /*
     Title: leftDrawer.js
-    Version: 1.0.1
+    Version: 1.5.1
     Author: Harsh Bhavsar
     Repo: https://github.com/harshbits/harshbits-portfolio/
 */
@@ -16,9 +16,6 @@ import Avatar from 'material-ui/Avatar';
 
 class LeftDrawer extends Component {
 
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div>
@@ -36,18 +33,17 @@ class LeftDrawer extends Component {
           <Menu>
             <MenuItem leftIcon={<FontIcon className='fa fa-cutlery' />}>Cognitive Cooking</MenuItem>
             <MenuItem leftIcon={<FontIcon className='fa fa-pagelines' />}
-            linkButton={true} href="http://ieeexplore.ieee.org/document/6915416/" target="_blank" >Advanced Farming</MenuItem>
+            href="http://ieeexplore.ieee.org/document/6915416/" target="_blank" >Advanced Farming</MenuItem>
           <MenuItem leftIcon={<FontIcon className='fa fa-home' />}
-            linkButton={true} href="https://github.com/harshbits/project-u-bot" target="_blank">
+            href="https://github.com/harshbits/project-u-bot" target="_blank">
             Home Coumputing</MenuItem>
           <Divider />
           <MenuItem leftIcon={<FontIcon className='fa fa-code' />}
-            linkButton={true} href="https://github.com/harshbits/grpc-spring-boot-services/" target="_blank">
+            href="https://github.com/harshbits/grpc-spring-boot-services/" target="_blank">
             gRPC-Spring Boot</MenuItem>
-
           <Divider />
           <MenuItem leftIcon={<FontIcon className='fa fa-file-text' />}
-            linkButton={true} href="/Resume_Harsh.pdf" target="_blank">
+             href="/Resume_Harsh.pdf" target="_blank">
             My Résumé</MenuItem>
           </Menu>
           </div>

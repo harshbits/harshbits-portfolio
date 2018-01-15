@@ -1,3 +1,9 @@
+/*
+    Title: https-redirect.jsx
+    Version: 1.5.1
+    Author: Harsh Bhavsar
+    Repo: https://github.com/harshbits/harshbits-portfolio/
+*/
 import React from 'react';
 import PropTypes from 'prop-types';
 

@@ -1,15 +1,15 @@
 /*
     Title: chatbox.jsx
-    Version: 1.0.1
+    Version: 1.5.1
     Author: Harsh Bhavsar
     Repo: https://github.com/harshbits/harshbits-portfolio/
 */
 import React, {Component} from 'react';
-import {render} from 'react-dom'
 import './chatbox.css';
 import {Launcher} from 'react-chat-window';
 import messageHistory from '../../messageHistory';
 import axios from 'axios';
+import {connect} from 'react-redux';
 
 class ChatBox extends Component {
 
@@ -31,6 +31,7 @@ class ChatBox extends Component {
     axios.post('https://ubot-harsh-portfolio.herokuapp.com/v1/message', {
           type: 'text',
           author: "me",
+          city: this.props.city,
           data: { text: message.data.text}
         },
         {headers: {
@@ -79,4 +80,11 @@ class ChatBox extends Component {
     </div>);
   }
 }
-export default ChatBox;
+
+const mapStateToProps = (store) => {
+    return {
+        city: store.locationReducer.city
+    };
+};
+
+export default connect(mapStateToProps)(ChatBox);
