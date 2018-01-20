@@ -13,7 +13,7 @@
     "clone": "2.1.1",
     "howler": "2.0.3",
     "jquery": "3.2.1",
-    "material-ui": "^0.20.0",
+    "material-ui": "^0.17.4",
     "ramda": "0.24.0",
     "react": "^15.5.4",
     "react-chat-window": "^1.0.5",
