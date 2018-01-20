@@ -19,9 +19,13 @@ class GeoLocation extends Component {
   render() {
     return (
       <div>
-        <span style={{marginRight: 10, color: 'white'}}>{this.props.location}</span>
-        <a onClick={this.handleClick}>
-            <FontIcon className='fa fa-map-marker' color='white' hoverColor='#ADBAD5' />
+        <span style={{marginRight: 12, color: 'white'}}>{this.props.location}</span>
+        <a>
+            <FontIcon className={this.props.weatherIcon} color='white' hoverColor='#ADBAD5' />
+        </a>
+        <span style={{marginRight: 10, marginLeft: 12, color: 'white'}}>{this.props.weather}</span>
+        <a>
+            <FontIcon className='fas fa-map-marker-alt' color='white' hoverColor='#C06766' />
         </a>
       </div>
     );
@@ -30,7 +34,9 @@ class GeoLocation extends Component {
 
 const mapStateToProps = (store) => {
     return {
-        location: store.locationReducer.location
+        location: store.locationReducer.location,
+        weather: store.locationReducer.weather,
+        weatherIcon: store.locationReducer.weatherIcon
     };
 };
 

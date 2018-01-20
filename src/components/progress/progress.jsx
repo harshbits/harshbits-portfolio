@@ -80,7 +80,7 @@ class ProgressComponent extends Component {
       'social': {
         'display': 'flex',
         'justifyContent': 'space-between',
-        'width': '375px',
+        'width': '450px',
         'margin': '15px'
       }
     };
@@ -89,19 +89,19 @@ class ProgressComponent extends Component {
          <div style={styles.social}>
           <GeoLocation />
           <a href='https://www.facebook.com/harshbits/'target='_blank'>
-             <FontIcon className='fa fa-facebook-official' color='white' hoverColor='#ADBAD5' />
+             <FontIcon className='fab fa-facebook-f' color='white' hoverColor='#ADBAD5' />
           </a>
           <a href='https://twitter.com/harshbits2110/' target='_blank'>
-            <FontIcon className='fa fa-twitter' color='white' hoverColor='#A2D9FA' />
+            <FontIcon className='fab fa-twitter' color='white' hoverColor='#A2D9FA' />
           </a>
           <a href='https://github.com/harshbits/' target='_blank'>
-            <FontIcon className='fa fa-github' color='white' hoverColor='#979797' />
+            <FontIcon className='fab fa-github' color='white' hoverColor='#979797' />
           </a>
           <a href='https://www.linkedin.com/in/harshbhavsar21/' target='_blank'>
-            <FontIcon className='fa fa-linkedin-square' color='white' hoverColor='#97C1D5' />
+            <FontIcon className='fab fa-linkedin-in' color='white' hoverColor='#97C1D5' />
           </a>
           <a href='https://plus.google.com/u/0/+HarshBhavsar2110/' target='_blank'>
-            <FontIcon className='fa fa-google-plus' color='white' hoverColor='#C06766' />
+            <FontIcon className='fab fa-google-plus-g' color='white' hoverColor='#C06766' />
           </a>
         </div>
        );

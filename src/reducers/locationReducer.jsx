@@ -7,7 +7,12 @@
 export default function reducer(state={
   city: null,
   state: null,
+  temperature: null,
+  unit: null,
+  condition: null,
   location: 'Fetching...',
+  weather: null,
+  weatherIcon: null,
   error: null
 }, action){
   switch (action.type) {
@@ -22,7 +27,11 @@ export default function reducer(state={
             ...state,
             city: action.payload.city,
             state: action.payload.stateCode,
-            location: action.payload.city + ', ' + action.payload.stateCode
+            temperature: action.payload.temperature,
+            unit: action.payload.unit,
+            location: action.payload.city + ', ' + action.payload.stateCode,
+            weather: action.payload.temperature+'° ' + action.payload.unit,
+            weatherIcon: action.payload.weatherIcon != null ?  action.payload.weatherIcon : 'wi wi-thermometer 2x'
         }
       }else{
         return {
