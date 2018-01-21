@@ -32,6 +32,8 @@ class ChatBox extends Component {
           type: 'text',
           author: "me",
           city: this.props.city,
+          latitude: this.props.latitude,
+          longitude: this.props.longitude,
           data: { text: message.data.text}
         },
         {headers: {
@@ -83,7 +85,9 @@ class ChatBox extends Component {
 
 const mapStateToProps = (store) => {
     return {
-        city: store.locationReducer.city
+        city: store.locationReducer.city,
+        latitude: store.locationReducer.latitude,
+        longitude: store.locationReducer.longitude
     };
 };
 

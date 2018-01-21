@@ -5,6 +5,8 @@
     Repo: https://github.com/harshbits/harshbits-portfolio/
 */
 export default function reducer(state={
+  latitude: null,
+  longitude: null,
   city: null,
   state: null,
   temperature: null,
@@ -25,6 +27,8 @@ export default function reducer(state={
       if(action.payload.city){
         return {
             ...state,
+            latitude: action.payload.latitude,
+            longitude: action.payload.longitude,
             city: action.payload.city,
             state: action.payload.stateCode,
             temperature: action.payload.temperature,

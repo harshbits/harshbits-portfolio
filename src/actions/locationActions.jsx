@@ -21,6 +21,8 @@ export function fetchLocation(){
             }
           })
           .then(response => {
+            response.data.latitude = position.coords.latitude;
+            response.data.longitude = position.coords.longitude;
             console.log(response.data);
             dispatch({type:'FETCH_LOCATION_FULFILLED', payload:response.data});
           })
