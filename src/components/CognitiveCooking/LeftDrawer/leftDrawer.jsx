@@ -19,12 +19,18 @@ class LeftDrawer extends Component {
       const styles={
         title: {
           cursor: 'pointer',
-          color: 'black',
+          color: '#333333',
+          fontFamily: 'Trattatello, fantasy',
+          fontWeight: 'bold',
+          fontSize: '30px',
         },
         menuItem: {
-          color: 'black',
+          color: '#333333',
+          fontFamily: 'Trattatello, fantasy',
+          textAlign: 'center',
+          fontSize: '20px',
         }
-    };
+      };
 
     return (
       <div>
@@ -42,13 +48,13 @@ class LeftDrawer extends Component {
           <div className="section drawer" >
           <Menu
             menuItemStyle={styles.menuItem} >
-            <MenuItem primaryText="ASK EUNICE" leftIcon={<FontIcon className='fas fa-utensils' />} />
+            <MenuItem primaryText="ASK EUNICE"  />
             <Divider />
-            <MenuItem primaryText="RECIPES" leftIcon={<FontIcon className='fas fa-utensils' />} />
+            <MenuItem primaryText="RECIPES" />
             <Divider />
-            <MenuItem primaryText="RECIPE TIPS" leftIcon={<FontIcon className='fas fa-utensils' />} />
+            <MenuItem primaryText="RECIPE TIPS" />
             <Divider />
-            <MenuItem primaryText="RESTAURANTS" leftIcon={<FontIcon className='fas fa-utensils' />} />
+            <MenuItem primaryText="RESTAURANTS"  />
           </Menu>
           </div>
         </Drawer>
