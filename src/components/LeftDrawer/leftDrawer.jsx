@@ -13,7 +13,6 @@ import MenuItem from 'material-ui/MenuItem';
 import FontIcon from 'material-ui/FontIcon';
 import Divider from 'material-ui/Divider';
 import Avatar from 'material-ui/Avatar';
-import { Link } from 'react-router-dom';
 
 class LeftDrawer extends Component {
 
@@ -33,7 +32,7 @@ class LeftDrawer extends Component {
           <div className="section drawer" >
           <Menu>
             <MenuItem leftIcon={<FontIcon className='fas fa-utensils' />}
-              containerElement={<Link to="/cognitive-cooking" />} target="_blank">Cognitive Cooking</MenuItem>
+              href="https://cognitive-cooking.herokuapp.com/" target="_blank">Cognitive Cooking</MenuItem>
             <MenuItem leftIcon={<FontIcon className='fab fa-pagelines' />}
             href="http://ieeexplore.ieee.org/document/6915416/" target="_blank" >Advanced Farming</MenuItem>
             <MenuItem leftIcon={<FontIcon className='fa fa-home' />}

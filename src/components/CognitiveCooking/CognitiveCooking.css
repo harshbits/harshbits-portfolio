@@ -1,9 +1,0 @@
-.search-section {
-  position: relative;
-  height: 100vh;
-  min-height: 500px;
-  max-height: 1000px;
-  background: url(/images/cooking-dough.jpg);
-  background-size: cover;
-  filter: opacity(95%);
-}
