@@ -22,7 +22,7 @@ class FooterComponent extends Component {
     return (
       <div className="footer">
         <div className="link-list">
-          Copyright &copy; 2017 HARSH BHAVSAR
+          &copy;2018 Harsh Bhavsar® - All rights reserved
         </div>
         <FlatButton labelStyle={{
           "color": "rgba(0, 0, 0, 0.65)"
